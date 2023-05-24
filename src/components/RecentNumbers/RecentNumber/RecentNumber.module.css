@@ -2,18 +2,20 @@
     padding: 10px;
     display: inline-block;
     border: 1px solid white;
-    width: 50px;
-    height: 50px;
-    line-height: 25px;
-    font-size: 20px;
+    border-radius: 100px;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 15px;
     color: white;
 }
 .red{
-    background: red;
+    background:  #FB4566;
 }
 .black{
-    background: black;
+    background: #9296A3;
 }
 .green{
-    background: green;
+    background: #57FF7B;
 }

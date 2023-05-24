@@ -8,8 +8,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 150px;
-    background-color: #a1a1a1;
-
+    background-color: #232631;
 }
 
 .App .MessageList {
@@ -18,7 +17,7 @@
 }
 
 .App .MessageForm {
-    background: #eee;
+    background: #282B36;
     border-top: 1px solid #ccc;
     border-radius: 0 0 3px 3px;
     box-sizing: border-box;
@@ -27,5 +26,24 @@
 
 .chat{
     position: absolute;
-    margin: 90px
+    margin: 90px;
+    color: white;
+}
+
+.logo{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 70px;
+    top: 22px;
+}
+
+.vector{
+    margin-left: 200px;
+    margin-right: 7px;
+}
+
+.divVector{
+    display: flex;
+    align-items: center;
 }

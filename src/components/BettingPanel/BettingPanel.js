@@ -66,12 +66,14 @@ class BettingPanel extends Component {
             <div className={classes.bettingPanel}>
                 <h1>{this.props.title}</h1>
                 <BalancePanel>{this.state.balance.toLocaleString()}</BalancePanel>
-                <input className={classes.betInput} type="number" placeholder="Bet..." onChange={this.handleChange} />
+                <input className={classes.betInput} placeholder="Bet..." onChange={this.handleChange} />
                 {error}
                 <div className={classes.betButtons}>
-                    <button className={classes.red} style={this.props.btn_dis_style} disabled={this.props.disabledBool} onClick={this.clickHandle.bind(this, 'red')}>Bet Red (X2)</button>
-                    <button className={classes.green} style={this.props.btn_dis_style} disabled={this.props.disabledBool} onClick={this.clickHandle.bind(this, 'green')}>Bet Green (X14)</button>
-                    <button className={classes.black} style={this.props.btn_dis_style} disabled={this.props.disabledBool} onClick={this.clickHandle.bind(this, 'black')}>Bet Black (X2)</button>
+                    <div className={'button-container'}>
+                        <button className={classes.red} style={this.props.btn_dis_style} disabled={this.props.disabledBool} onClick={this.clickHandle.bind(this, 'red')}>Bet Red (X2)</button>
+                        <button className={classes.green} style={this.props.btn_dis_style} disabled={this.props.disabledBool} onClick={this.clickHandle.bind(this, 'green')}>Bet Green (X14)</button>
+                        <button className={classes.black} style={this.props.btn_dis_style} disabled={this.props.disabledBool} onClick={this.clickHandle.bind(this, 'black')}>Bet Black (X2)</button>
+                    </div>
                 </div>
             </div>
         )
